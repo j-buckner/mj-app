@@ -309,8 +309,9 @@ p.nominalBounds = null;
 
 // stage content:
 (lib.ForestAnimation = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
 
+	this.initialize(mode,startPosition,loop,{});
+  console.log(startPosition);
 	// stake1
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f().s("#1B1D21").ss(1.5,1).p("AgDADIAHgF");
