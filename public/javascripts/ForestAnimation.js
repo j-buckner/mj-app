@@ -1269,7 +1269,7 @@ if (loop == null) { loop = false; } this.initialize(mode,startPosition,loop,{});
   this.timeline.addTween(cjs.Tween.get(this.instance_16).wait(12).to({_off:false},1).to({_off:true},1).wait(97));
   this.timeline.addTween(cjs.Tween.get(this.instance_17).wait(13).to({_off:false},1).to({_off:true},1).wait(96));
   this.timeline.addTween(cjs.Tween.get(this.instance_18).wait(14).to({_off:false},1).to({_off:true},1).wait(95));
-  this.timeline.addTween(cjs.Tween.get(this.instance_19).wait(15).to({_off:false},1).to({_off:true},1).wait(94));
+  this.timeline.addTween(cjs.Tween.get(this.instance_19).wait(15).to({_off:false},1).to({_off:true},1).wait(94).call(loadMountains));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = null;
