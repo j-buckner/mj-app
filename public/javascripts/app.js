@@ -7,7 +7,7 @@ function init() {
   stage.enableMouseOver(20);  
   
   resize();
-  loadOptions();
+  start();
 }
 
 function resize() {
