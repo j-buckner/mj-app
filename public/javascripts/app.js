@@ -172,3 +172,28 @@ function loadMountains() {
   createjs.Ticker.setFPS(24);
   createjs.Ticker.addEventListener("tick", stage);
 }
+
+function loadSea() {
+  
+  let seaContainer = new createjs.Container();
+  let seaOffsetX = -275;
+  let seaOffsetY = -200;
+
+  let seaRoot = new lib.SeaAnimation();
+  seaRoot.x = (stage.canvas.width / 2) + ((stage.canvas.width / 3)) + seaOffsetX;
+  seaRoot.y = (stage.canvas.height / 2) + seaOffsetY;
+
+  let text = new createjs.Text("the sea", "30px quicksandregular", "white");
+  text.alpha = 0;
+  text.x = seaRoot.x - seaOffsetX - (text.getMeasuredWidth() / 2);
+  text.y = seaRoot.y + 360;
+
+  createjs.Tween.get(text, { loop: false })
+  .to({ alpha: 1 }, 3000, createjs.Ease.getPowIn(2));
+
+  seaContainer.addChild(seaRoot, text);
+  stage.addChild(seaContainer);
+
+  createjs.Ticker.setFPS(24);
+  createjs.Ticker.addEventListener("tick", stage);
+}

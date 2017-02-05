@@ -1003,7 +1003,7 @@ if (loop == null) { loop = false; } this.initialize(mode,startPosition,loop,{});
   this.timeline.addTween(cjs.Tween.get(this.instance_17).wait(13).to({_off:false},1).to({_off:true},1).wait(130));
   this.timeline.addTween(cjs.Tween.get(this.instance_18).wait(14).to({_off:false},1).to({_off:true},1).wait(129));
   this.timeline.addTween(cjs.Tween.get(this.instance_19).wait(15).to({_off:false},1).to({_off:true},1).wait(128));
-  this.timeline.addTween(cjs.Tween.get(this.shape_114).wait(16).to({_off:false},1).wait(128));
+  this.timeline.addTween(cjs.Tween.get(this.shape_114).wait(16).to({_off:false},1).wait(128).call(loadSea));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = null;
